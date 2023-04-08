@@ -7,6 +7,9 @@ public class IfExpression {
 	private String variableName;
 	private List<ConditionalStatement> statements = new ArrayList<>();
 	private Content elseStatement;
+	public IfExpression() {
+	}
+	
 	public IfExpression(String variableName) {
 		this.variableName = variableName;
 	}
@@ -29,4 +32,12 @@ public class IfExpression {
 	public void addStatement(ConditionalStatement statement) {
 		statements.add(statement);
 	}
+
+	@Override
+	public String toString() {
+		return "IfExpression [variableName=" + variableName + ", statements=" + statements + ", elseStatement="
+				+ elseStatement + "]";
+	}
+	
+	
 }
