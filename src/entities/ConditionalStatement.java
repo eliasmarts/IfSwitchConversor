@@ -10,6 +10,8 @@ public class ConditionalStatement {
 		this.conditions = conditions;
 		this.content = content;
 	}
+	public ConditionalStatement() {
+	}
 	public List<Condition> getConditions() {
 		return conditions;
 	}
@@ -22,6 +24,12 @@ public class ConditionalStatement {
 	public void setContent(Content content) {
 		this.content = content;
 	}
-	
+	public void addCondition(Condition condition) {
+		conditions.add(condition);
+	}
+	@Override
+	public String toString() {
+		return "ConditionalStatement [conditions=" + conditions + ", content=" + content + "]";
+	}
 	
 }

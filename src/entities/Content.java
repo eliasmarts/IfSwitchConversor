@@ -16,4 +16,9 @@ public class Content {
 	public void addLine(String line) {
 		lines.add(line);
 	}
+
+	@Override
+	public String toString() {
+		return "Content [lines=" + lines + "]";
+	}
 }

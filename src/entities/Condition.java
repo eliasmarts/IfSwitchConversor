@@ -40,6 +40,11 @@ public class Condition {
 	public void setType(ConditionType type) {
 		this.type = type;
 	}
+
+	@Override
+	public String toString() {
+		return "Condition [variableName=" + variableName + ", value=" + value + ", type=" + type + "]";
+	}
 	
 	
 }
